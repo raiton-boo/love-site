@@ -1,23 +1,98 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Love Site - Dynamic Love Message</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Page Title & Description -->
+    <title>Dynamic Love Message</title>
+    <meta
+      name="description"
+      content="| をドラッグして愛を段階的に表現するインタラクティブなWebサイト。I LOVE YOU から ♥ まで4段階の愛のメッセージが楽しめます。"
+    />
+    <meta
+      name="keywords"
+      content="love, ラブ, ハート, インタラクティブ, 愛, メッセージ, ドラッグ, アニメーション"
+    />
+    <meta name="author" content="らいとん" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="image.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="image.png" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://raiton-boo.github.io/love-site/" />
+    <meta property="og:title" content="Dynamic Love Message" />
+    <meta
+      property="og:description"
+      content="| をドラッグして愛を段階的に表現するインタラクティブなWebサイト。I LOVE YOU から ♥ まで4段階の愛のメッセージが楽しめます。"
+    />
+    <meta
+      property="og:image"
+      content="https://raiton-boo.github.io/love-site/image.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Love Site - インタラクティブな愛のメッセージサイト"
+    />
+    <meta property="og:site_name" content="Love Site" />
+    <meta property="og:locale" content="ja_JP" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:url"
+      content="https://raiton-boo.github.io/love-site/"
+    />
+    <meta name="twitter:title" content="Love Site - Dynamic Love Message" />
+    <meta
+      name="twitter:description"
+      content="| をドラッグして愛を段階的に表現するインタラクティブなWebサイト。I LOVE YOU から ♥ まで4段階の愛のメッセージが楽しめます。"
+    />
+    <meta
+      name="twitter:image"
+      content="https://raiton-boo.github.io/love-site/image.png"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Love Site - インタラクティブな愛のメッセージサイト"
+    />
+
+    <!-- Preload CSS -->
+    <link rel="preload" href="style.css" as="style" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Love Site",
+        "description": "インタラクティブな愛の表現サイト",
+        "url": "https://raiton-boo.github.io/love-site/",
+        "creator": {
+          "@type": "Person",
+          "name": "らいとん"
+        },
+        "keywords": "love, interactive, heart, message, drag, animation"
+      }
+    </script>
+  </head>
+  <body>
     <div class="background-gradient"></div>
     <div class="container">
-        <div class="love-message" id="loveMessage">
-            <div class="border-left" id="leftBorder">|</div>
-            <div class="message" id="message">I LOVE YOU</div>
-            <div class="border-right" id="rightBorder">|</div>
-        </div>
-        <div class="instruction">
-            <p>|をドラッグして愛を表現しよう</p>
-        </div>
+      <div class="love-message" id="loveMessage">
+        <div class="border-left" id="leftBorder">|</div>
+        <div class="message" id="message">I LOVE YOU</div>
+        <div class="border-right" id="rightBorder">|</div>
+      </div>
+      <div class="instruction">
+        <p>|をドラッグして愛を表現しよう</p>
+      </div>
     </div>
-</body>
-<script src="script.js"></script>
+  </body>
+  <script src="script.js"></script>
 </html>

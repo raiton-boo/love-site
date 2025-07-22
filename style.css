@@ -1,120 +1,117 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    position: relative;
-    background: #0d1117;
+  font-family: 'Arial', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  background: #0d1117;
 }
 
 .background-gradient {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(
-        circle at center,
-        rgba(255, 105, 180, 0.1) 0%,
-        rgba(138, 43, 226, 0.05) 30%,
-        rgba(13, 17, 23, 1) 70%
-    );
-    z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle at center,
+    rgba(255, 105, 180, 0.1) 0%,
+    rgba(138, 43, 226, 0.05) 30%,
+    rgba(13, 17, 23, 1) 70%
+  );
+  z-index: -1;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    z-index: 1;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  position: relative;
 }
 
 .love-message {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 4rem;
-    font-weight: bold;
-    min-height: 120px;
-    position: relative;
-    width: 600px;
-    margin-bottom: 40px;
-    user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  font-weight: bold;
+  min-height: 120px;
+  position: relative;
+  width: 600px;
+  margin-bottom: 40px;
+  user-select: none;
 }
 
 .border-left,
 .border-right {
-    font-size: 5rem;
-    font-weight: bold;
-    color: white;
-    text-shadow: 
-        0 0 20px rgba(255, 255, 255, 0.8),
-        0 0 40px rgba(255, 255, 255, 0.4);
-    cursor: grab;
-    user-select: none;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: all 0.2s ease;
-    z-index: 10;
+  font-size: 5rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.8),
+    0 0 40px rgba(255, 255, 255, 0.4);
+  cursor: grab;
+  user-select: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.2s ease;
+  z-index: 10;
 }
 
 .border-left:active,
 .border-right:active {
-    cursor: grabbing;
-    transform: translateY(-50%) scale(1.1);
-    text-shadow: 
-        0 0 30px rgba(255, 255, 255, 1),
-        0 0 50px rgba(255, 255, 255, 0.6);
+  cursor: grabbing;
+  transform: translateY(-50%) scale(1.1);
+  text-shadow: 0 0 30px rgba(255, 255, 255, 1),
+    0 0 50px rgba(255, 255, 255, 0.6);
 }
 
 .border-left {
-    left: -10px;
+  left: -10px;
 }
 
 .border-right {
-    right: -10px;
+  right: -10px;
 }
 
 .message {
-    color: #ff69b4;
-    text-shadow: 
-        0 0 20px rgba(255, 105, 180, 0.8),
-        0 0 40px rgba(255, 105, 180, 0.4);
-    white-space: nowrap;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    user-select: none;
-    font-size: 4rem;
-    position: relative;
-    z-index: 5;
-    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  color: #ff69b4;
+  text-shadow: 0 0 20px rgba(255, 105, 180, 0.8),
+    0 0 40px rgba(255, 105, 180, 0.4);
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  font-size: 4rem;
+  position: relative;
+  z-index: 5;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .instruction {
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 1.2rem;
-    text-align: center;
-    animation: fadeInOut 3s ease-in-out infinite;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.2rem;
+  text-align: center;
+  animation: fadeInOut 3s ease-in-out infinite;
 }
 
 .instruction p {
-    margin: 0;
+  margin: 0;
 }
 
 /* レスポンシブデザイン - 削除（下部で統一） */
@@ -122,131 +119,128 @@ body {
 /* アニメーション効果 */
 /* アニメーション効果 */
 @keyframes heartbeat {
-    0% {
-        transform: scale(1);
-        text-shadow: 
-            0 0 20px rgba(255, 23, 68, 0.8),
-            0 0 40px rgba(255, 23, 68, 0.6);
-    }
-    50% {
-        transform: scale(1.1);
-        text-shadow: 
-            0 0 30px rgba(255, 23, 68, 1),
-            0 0 50px rgba(255, 23, 68, 0.8);
-    }
-    100% {
-        transform: scale(1);
-        text-shadow: 
-            0 0 20px rgba(255, 23, 68, 0.8),
-            0 0 40px rgba(255, 23, 68, 0.6);
-    }
+  0% {
+    transform: scale(1);
+    text-shadow: 0 0 20px rgba(255, 23, 68, 0.8),
+      0 0 40px rgba(255, 23, 68, 0.6);
+  }
+  50% {
+    transform: scale(1.1);
+    text-shadow: 0 0 30px rgba(255, 23, 68, 1), 0 0 50px rgba(255, 23, 68, 0.8);
+  }
+  100% {
+    transform: scale(1);
+    text-shadow: 0 0 20px rgba(255, 23, 68, 0.8),
+      0 0 40px rgba(255, 23, 68, 0.6);
+  }
 }
 
 @keyframes fadeInOut {
-    0%, 100% {
-        opacity: 0.4;
-    }
-    50% {
-        opacity: 0.8;
-    }
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
 }
 
 @keyframes scaleIn {
-    0% {
-        transform: scale(0.9);
-        opacity: 0.7;
-    }
-    50% {
-        transform: scale(1.05);
-        opacity: 0.9;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
+  0% {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .message-changing {
-    animation: scaleIn 0.4s ease-out;
+  animation: scaleIn 0.4s ease-out;
 }
 
 /* レスポンシブデザイン */
 @media (max-width: 768px) {
-    .container {
-        padding: 0 20px;
-    }
-    
-    .love-message {
-        font-size: 3rem;
-        width: calc(100vw - 80px);
-        max-width: 400px;
-    }
-    
-    .border-left,
-    .border-right {
-        font-size: 4rem;
-    }
-    
-    .message {
-        font-size: 3rem;
-    }
-    
-    .instruction {
-        font-size: 1rem;
-        padding: 0 20px;
-    }
+  .container {
+    padding: 0 20px;
+  }
+
+  .love-message {
+    font-size: 3rem;
+    width: calc(100vw - 80px);
+    max-width: 400px;
+  }
+
+  .border-left,
+  .border-right {
+    font-size: 4rem;
+  }
+
+  .message {
+    font-size: 3rem;
+  }
+
+  .instruction {
+    font-size: 1rem;
+    padding: 0 20px;
+  }
 }
 
 @media (max-width: 480px) {
-    .container {
-        padding: 0 15px;
-    }
-    
-    .love-message {
-        font-size: 2.5rem;
-        width: calc(100vw - 60px);
-        max-width: 300px;
-        min-height: 80px;
-    }
-    
-    .border-left,
-    .border-right {
-        font-size: 3rem;
-    }
-    
-    .message {
-        font-size: 2.5rem;
-    }
-    
-    .instruction {
-        font-size: 0.9rem;
-        padding: 0 15px;
-    }
+  .container {
+    padding: 0 15px;
+  }
+
+  .love-message {
+    font-size: 2.5rem;
+    width: calc(100vw - 60px);
+    max-width: 300px;
+    min-height: 80px;
+  }
+
+  .border-left,
+  .border-right {
+    font-size: 3rem;
+  }
+
+  .message {
+    font-size: 2.5rem;
+  }
+
+  .instruction {
+    font-size: 0.9rem;
+    padding: 0 15px;
+  }
 }
 
 @media (max-width: 360px) {
-    .container {
-        padding: 0 10px;
-    }
-    
-    .love-message {
-        font-size: 2rem;
-        width: calc(100vw - 40px);
-        max-width: 280px;
-        min-height: 70px;
-    }
-    
-    .border-left,
-    .border-right {
-        font-size: 2.5rem;
-    }
-    
-    .message {
-        font-size: 2rem;
-    }
-    
-    .instruction {
-        font-size: 0.8rem;
-        padding: 0 10px;
-    }
+  .container {
+    padding: 0 10px;
+  }
+
+  .love-message {
+    font-size: 2rem;
+    width: calc(100vw - 40px);
+    max-width: 280px;
+    min-height: 70px;
+  }
+
+  .border-left,
+  .border-right {
+    font-size: 2.5rem;
+  }
+
+  .message {
+    font-size: 2rem;
+  }
+
+  .instruction {
+    font-size: 0.8rem;
+    padding: 0 10px;
+  }
 }
