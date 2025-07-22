@@ -1,8 +1,8 @@
 # 💖 Love Site - Dynamic Love Message
 
-🌐 **サイトURL**: [https://raiton-boo.github.io/love-site/](https://raiton-boo.github.io/love-site/)
+🌐 **サイト URL**: [https://raiton-boo.github.io/love-site/](https://raiton-boo.github.io/love-site/)
 
-インタラクティブな愛のメッセージサイトです。`|` 文字をドラッグして、愛の表現を段階的に変化させることができます。
+愛のメッセージサイトです。`|` 文字をドラッグして、愛の表現を段階的に変化させることができます。
 
 ## 🎯 機能
 
@@ -131,4 +131,4 @@ Created with ❤️ for expressing love in interactive ways.
 
 ---
 
-**楽しい愛の表現をお楽しみください！** 💖✨
+**楽しい愛の表現をお楽しみください！**
