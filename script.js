@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function updateMessage(distance, animate = true) {
     // 段階決定（距離に基づいて正しいメッセージを選択）
-    let newStageIndex = 0; // デフォルトは♥
+    let newStageIndex = 0; // デフォルトはハート絵文字
     for (let i = 0; i < messageStages.length; i++) {
       if (
         distance >= messageStages[i].minDistance &&
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function () {
     message.textContent = currentStage.text;
     message.style.color = currentStage.color;
 
-    // 特別なエフェクト：♥の時
+    // 特別なエフェクト：ハート絵文字の時
     if (currentStage.text === '♥') {
       message.style.animation = 'heartbeat 1.2s ease-in-out infinite';
     } else {

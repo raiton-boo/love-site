@@ -117,7 +117,6 @@ body {
 /* レスポンシブデザイン - 削除（下部で統一） */
 
 /* アニメーション効果 */
-/* アニメーション効果 */
 @keyframes heartbeat {
   0% {
     transform: scale(1);
